@@ -237,7 +237,7 @@ drawHead <- function(type, xy, bbox, col, lwd, lty, len, out=TRUE){
                x <- c(0, 0)*r
                y <- c(-1,1)*r*3
                xyr <- rotate(x,y,alpha, xy[2,])
-               lines(xyr, col=col, lwd=lwd, lty=lty*4)
+               lines(xyr, col=col, lwd=lwd*4, lty=lty)
            },
            "normal"={
                normArrow(r, alpha, xy, col, lwd, lty, out)
