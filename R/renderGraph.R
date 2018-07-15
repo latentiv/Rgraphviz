@@ -235,9 +235,9 @@ drawHead <- function(type, xy, bbox, col, lwd, lty, len, out=TRUE){
            },
            "tee"={
                x <- c(0, 0)*r
-               y <- c(-1,1)*r*2
+               y <- c(-1,1)*r*3
                xyr <- rotate(x,y,alpha, xy[2,])
-               lines(xyr, col=col, lwd=lwd, lty=lty)
+               lines(xyr, col=col, lwd=lwd, lty=lty*4)
            },
            "normal"={
                normArrow(r, alpha, xy, col, lwd, lty, out)
